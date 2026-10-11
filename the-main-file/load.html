@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="style2.css">
+
+  <title>Frontend Mentor | Product list with cart</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="">
+      <header>
+        <h1>Desserts</h1>
+      </header>
+      <div id="products">
+      </div>
+
+    </div>
+
+
+    <div class="cart">
+      <h2 class="num-of-items">
+        Your Cart (0)
+      </h2>
+
+      <div>
+        <div class="empty-cart">
+          <img src="./assets/images/illustration-empty-cart.svg" alt="">
+          <p>Your added items will appear here</p>
+        </div>
+
+        <div class="cart-header">
+
+        </div>
+        <div class="totalCost">
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="overlay">
+
+
+    <div class="cart-checkout">
+      <div>
+        <img src="./assets/images/icon-order-confirmed.svg" alt="icon-order-confirmed">
+      </div>
+      <div>
+        <h3>Order Confirmed</h3>
+        <p class="enjoy">We hope you enjoy your food!</p>
+      </div>
+
+      <div>
+        <div class="confirm-items">
+          <div class="confirm-item">
+            <div>
+              <img src="./assets/images/image-baklava-thumbnail.jpg" alt="">
+              <div>
+                <p>fhewfsfgsjgfs</p>
+                <span>1x <span>@5.50</span></span>
+              </div>
+            </div>
+            <p>$5.50</p>
+          </div>
+        </div>
+      
+        <div class="order-total">
+          <p>Order Total</p>
+          <span id="totalcost">$0.00</span>
+        </div>
+      </div>
+
+      <button class="confirm-order order-text" onclick="resetCart()">
+        Start New Order
+      </button>
+    </div>
+
+  </div>
+
+  </div>
+
+
+
+ 
+  <script src="./arrayOfData.js"></script>
+
+
+  
+</body>
+
+</html>

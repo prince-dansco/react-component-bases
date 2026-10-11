@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Text", sans-serif;
+}
+
+:root {
+  --red: hsl(14, 86%, 42%);
+  --green: hsl(159, 69%, 38%);
+  --rose-50: hsl(20, 50%, 98%);
+  --rose-100: hsl(13, 31%, 94%);
+  --rose-300: #c9aea6;
+  --rose-400: hsl(7, 20%, 60%);
+  --rose-500: #87635a;
+  --rose-900: #260f08;
+}
+
+body {
+  max-width: 1440px;
+  margin: auto;
+  background-color: var(--rose-100);
+  position: relative;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 75rem;
+    width: 100%;
+    margin-inline: auto;
+    padding-block: 2.5rem;
+  }
+
+  header h1 {
+    margin-left: 0.625rem;
+  }
+  .container > div:first-child {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 70%;
+  }
+  
+  .red{
+    background-color:var(--red);
+    color: var(--rose-100);
+  }
+  #cart {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14.5rem, 1fr));
+    gap: 20px;
+    padding: 6px;
+  }
+
+
+
+
+
+
+
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+    left: 50px;
+    bottom: -13px;
+}
+
+.d-flex{
+display: flex;
+align-items: center;
+gap: 6px;
+}
+
+.product-image img {
+  width: 250px;
+  height: fit-content;
+  object-fit: cover;
+  border-radius: 5px;
+  
+}
+.add-to-cart {
+    background-color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.add-to-cart .icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  color: orangered;
+}
+.product-details{
+    margin: 30px 0;
+}
